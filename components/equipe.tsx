@@ -4,7 +4,7 @@ export default function Equipe() {
   const membros = [
     { nome: "Laura", cargo: "CERIMONIALISTA & FUNDADORA" },
     { nome: "Danyele", cargo: "CERIMONIALISTA" },
-    { nome: "Thalla", cargo: "CERIMONIALISTA" },
+    { nome: "Thalia", cargo: "CERIMONIALISTA" },
     { nome: "Vanessa", cargo: "CERIMONIALISTA" },
   ];
 
