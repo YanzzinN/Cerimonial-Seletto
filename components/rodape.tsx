@@ -55,7 +55,7 @@ export default function Rodape() {
             </h4>
             <div className="flex flex-col space-y-3 text-sm font-light">
               <a
-                href="https://wa.me/seunumeroaqui"
+                href="https://wa.me/5521995651253"
                 target="_blank"
                 className="hover:text-[#00a884] transition-colors"
               >
