@@ -1,4 +1,3 @@
-// components/titulo.tsx
 "use client";
 import Image from "next/image";
 import { MessageCircle } from "lucide-react";
@@ -18,6 +17,11 @@ export default function Titulo() {
   return (
     <section className="relative h-[100dvh] w-full flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
+        <div className="absolute top-6 left-6 z-20">
+          <span className="bg-black/20 backdrop-blur-md text-white/90 text-[10px] tracking-widest px-3 py-1.5 rounded-full border border-white/10 font-light uppercase">
+            Foto por: @denissonrosendofotografo
+          </span>
+        </div>
         <Image
           src="/seletto1.webp"
           alt="Background"

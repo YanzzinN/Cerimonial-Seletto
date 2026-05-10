@@ -1,4 +1,3 @@
-// components/galeria.tsx
 "use client";
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
@@ -9,14 +8,46 @@ export default function Galeria() {
   const [emblaRef] = useEmblaCarousel({ loop: true, align: "start" });
 
   const images = [
-    { src: "/seletto2.webp", alt: "Estética Refinada" },
-    { src: "/seletto3.webp", alt: "Memórias Eternizadas" },
-    { src: "/seletto4.webp", alt: "Vivências Memoráveis" },
-    { src: "/seletto5.webp", alt: "Momentos Únicos" },
-    { src: "/seletto7.webp", alt: "Experiências inesquecíveis" },
-    { src: "/seletto9.webp", alt: "Momentos Singulares" },
-    { src: "/seletto10.webp", alt: "Projetos Personalizados" },
-    { src: "/seletto11.webp", alt: "Padrão de Excelência" },
+    {
+      src: "/seletto2.webp",
+      alt: "Estética Refinada",
+      fotografo: "Foto por: @diegorft_",
+    },
+    {
+      src: "/seletto3.webp",
+      alt: "Memórias Eternizadas",
+      fotografo: "Foto por: @diegorft_",
+    },
+    {
+      src: "/seletto4.webp",
+      alt: "Vivências Memoráveis",
+      fotografo: "Foto por: @diegorft_",
+    },
+    {
+      src: "/seletto5.webp",
+      alt: "Momentos Únicos",
+      fotografo: "Foto por: @newlabsfotografia",
+    },
+    {
+      src: "/seletto7.webp",
+      alt: "Experiências inesquecíveis",
+      fotografo: "Foto por: @newlabsfotografia",
+    },
+    {
+      src: "/seletto9.webp",
+      alt: "Momentos Singulares",
+      fotografo: "Foto por: @diegorft_",
+    },
+    {
+      src: "/seletto10.webp",
+      alt: "Projetos Personalizados",
+      fotografo: "Foto por: @diegorft_",
+    },
+    {
+      src: "/seletto11.webp",
+      alt: "Padrão de Excelência",
+      fotografo: "Foto por: @diegorft_",
+    },
   ];
 
   return (
@@ -51,6 +82,12 @@ export default function Galeria() {
               className="relative flex-[0_0_85%] md:flex-[0_0_45%] lg:flex-[0_0_35%] h-[50vh] md:h-[70vh] min-h-[400px] min-w-0 group"
             >
               <div className="relative w-full h-full overflow-hidden bg-zinc-200 rounded-sm">
+                <div className="absolute top-4 left-4 z-20">
+                  <span className="bg-black/20 backdrop-blur-md text-white/90 text-[10px] tracking-widest px-3 py-1.5 rounded-full border border-white/10 font-light uppercase">
+                    {img.fotografo}
+                  </span>
+                </div>
+
                 <Image
                   src={img.src}
                   alt={img.alt}
@@ -58,6 +95,7 @@ export default function Galeria() {
                   sizes="(max-width: 768px) 85vw, 35vw"
                   className="object-cover transition-all duration-[1.5s] ease-out group-hover:scale-105"
                 />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-700 flex flex-col justify-end p-6 md:p-10">
                   <span className="text-white/60 text-[9px] md:text-[10px] uppercase tracking-[0.4em] mb-2">
                     Galeria Cerimonial Seletto
