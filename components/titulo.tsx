@@ -8,7 +8,7 @@ export default function Titulo() {
     if (galleryElement) galleryElement.scrollIntoView({ behavior: "smooth" });
   };
 
-  const whatsappNumber = "5521995651253";
+  const whatsappNumber = "5579996843886";
   const message = encodeURIComponent(
     "Olá! Vi o site do Cerimonial Seletto e gostaria de agendar um evento.",
   );
