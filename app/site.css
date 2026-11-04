@@ -34,12 +34,14 @@
 .proposal__footer nav, .proposal__footer-contact { display:flex; flex-direction:column; align-items:flex-start; gap:12px; font-size:14px; }
 .proposal__footer strong { margin-bottom:8px; }
 .proposal__footer-bottom { grid-column:1/-1; border-top:1px solid rgba(255,255,255,.4); padding-top:24px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; font-size:12px; line-height:1.5; }
-.proposal--fotografia { --ink:#17251f; }
-.proposal--fotografia .proposal__header { background:#15251d; color:#fff; }
-.proposal--fotografia .proposal__hero { position:relative; display:flex; align-items:center; min-height:700px; padding:64px clamp(24px,8vw,120px); color:#fff; }
+.proposal--fotografia { --ink:#17251f; position:relative; }
+.proposal--fotografia .proposal__header { position:absolute; z-index:3; top:0; left:0; width:100%; color:#fff; }
+.proposal--fotografia .proposal__hero { position:relative; display:flex; align-items:center; justify-content:center; min-height:100dvh; padding:110px 24px 80px; color:#fff; text-align:center; }
 .proposal--fotografia .proposal__hero-photo { position:absolute; inset:0; min-height:0; }
-.proposal--fotografia .proposal__hero-photo::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.35)); }
-.proposal--fotografia .proposal__hero-copy { max-width:700px; padding:48px 0 80px; }
+.proposal--fotografia .proposal__hero-photo::after { content:''; position:absolute; inset:0; background:rgba(0,0,0,.6); }
+.proposal--fotografia .proposal__hero-copy { max-width:700px; padding:0; }
+.proposal--fotografia .proposal__hero-copy p { margin-left:auto; margin-right:auto; }
+.proposal--fotografia .proposal__actions { justify-content:center; }
 .proposal--fotografia .proposal__hero-photo figcaption { z-index:2; }
 .proposal--fotografia .proposal__team { background:#17251f; color:#fff; grid-template-columns:1.1fr 1fr; }
 .proposal--fotografia .proposal__team-photo { grid-column:1; grid-row:1; min-height:500px; }
@@ -54,8 +56,7 @@
   .proposal__nav { gap:12px; flex-wrap:nowrap; justify-content:flex-end; font-size:12px; padding-top:14px; }
   .proposal__hero h1 { font-size:clamp(3.2rem,14vw,4.5rem); }
   .proposal__hero-photo { width:100%; }
-  .proposal--fotografia .proposal__hero { display:flex; min-height:650px; padding:48px 24px; }
-  .proposal--fotografia .proposal__hero-copy { padding:30px 0 80px; }
+  .proposal--fotografia .proposal__hero { min-height:100dvh; padding:110px 24px 80px; }
   .proposal--fotografia .proposal__team { display:flex; flex-direction:column; align-items:stretch; padding:64px 24px; gap:36px; }
   .proposal--fotografia .proposal__team-photo { min-height:400px; order:-1; }
   .proposal--fotografia .proposal__footer { grid-template-columns:1fr 1fr; padding:48px 24px 28px; gap:32px; }
